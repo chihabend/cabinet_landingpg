@@ -169,19 +169,27 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
+    font-size: 3rem; /* increased */
+    line-height: 1.05;
+    margin-bottom: 1rem;
     color: var(--color-text);
-    animation: fadeInUp 1s ease;
+    font-weight: 800;
+    letter-spacing: -0.5px;
 }
 
+@media (max-width: 768px) {
+    .hero-text h1 { font-size: 2rem; }
+}
+
+.hero-title-part { display: inline-block; }
+.hero-title-location { color: var(--color-primary-dark); }
+.hero-title-name { color: var(--color-secondary); }
+.hero-title-separator { color: var(--color-text-light); margin: 0 6px; }
+
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: var(--color-text-light);
     margin-bottom: 2rem;
-    line-height: 1.8;
-    animation: fadeInUp 1s ease 0.2s both;
 }
 
 .hero-buttons {
